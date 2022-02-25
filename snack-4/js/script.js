@@ -4,12 +4,13 @@
 
 const arrInvitedGuests = ['Agamennone', 'Achille', 'Ettore', 'Menelao', 'Rodrigo Borgia', 'Putin',];
 
-let guestNameInput = prompt('Il messere favorisca il nome prego:').toUpperCase;
+let guestNameInput = prompt('Il messere favorisca il nome prego:');
+let guestNameUpper = guestNameInput.toUpperCase();
 let match= false;
 
 for (let arrItem = 0; arrItem < arrInvitedGuests.length; arrItem++){
-
-    if (arrInvitedGuests[arrItem].toUpperCase == guestNameInput) {
+    
+    if (arrInvitedGuests[arrItem].toUpperCase() == guestNameUpper) {
         match= true;
     }
 }
