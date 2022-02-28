@@ -9,3 +9,18 @@ Generatore di “nomi cognomi” casuali
 */
 
 
+const nomiArr = ['Agamennone', 'Achille', 'Ettore', 'Menelao', 'Rodrigo', 'Putin',];
+const cognomiArr = ['Ottone', 'Ferro', 'Tungsteno', 'Tecnezio', 'Borgia', 'Salmone',];
+const fakeGuest = [];
+
+let nomiArrRandom = Math.floor(Math.random() * nomiArr.length);
+let cognomiArrRandom = Math.floor(Math.random() * cognomiArr.length);
+
+let indiceLista = 0;
+
+
+while (indiceLista < 3) {
+    fakeGuest.push(nomiArrRandom + cognomiArrRandom);
+    indiceLista++;
+    console.log(fakeGuest);
+}
