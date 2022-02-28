@@ -5,18 +5,17 @@
 */
 
 
-/* CICLO FOR */
-
-let forNumeriUser
-let forSommaNumeri = 0;
-
-for (i = 0; i < 5; i++){
-    forNumeriUser = parseInt(prompt("Inserisci un numero intero positivo:"));
-    forSommaNumeri += forNumeriUser;
-    console.log(forSommaNumeri);
-}
-
-alert('La somma dei numeri che mi hai dato è di: ' + forSommaNumeri);
-
 /* CICLO WHILE */
 
+let numeriUser
+let sommaNumeri = 0;
+let indexNumeri = 0;
+
+while (indexNumeri < 5){
+    numeriUser = parseInt(prompt("Inserisci un numero intero positivo:"));
+    sommaNumeri += numeriUser;
+    console.log(sommaNumeri);
+    indexNumeri++;
+}
+
+alert('La somma dei numeri che mi hai dato è di: ' + sommaNumeri);
