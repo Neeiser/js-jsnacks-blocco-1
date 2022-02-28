@@ -1,20 +1,19 @@
+
 /* 
-- Chiedere per 5 volte all’utente di inserire un numero.
-- Stampa la somma di tutti i numeri inseriti.
-(Esegui questo programma in due versioni, con il for e con il while.) 
+
+- Inserisci un numero. 
+- Se è pari stampa il numero.
+- Se è dispari stampa il numero successivo.
+
 */
 
+let numeroInserito = parseInt(prompt('Inserisci un numero intero positivo: '));
 
-/* CICLO FOR */
-
-let numeriUser
-let somma = 0;
-
-for (i = 0; i < 5; i++){
-    numeriUser = parseInt(prompt("Inserisci un numero intero positivo:"));
-    somma += numeriUser;
-    console.log(somma);
+if (numeroInserito % 2 == 0){
+    alert('Il numero ' + numeroInserito + ' è pari.');
+    console.log (numeroInserito);
+} else {
+    numeroInserito = numeroInserito + 1
+    alert('Il numero ' + (numeroInserito - 1) + ' è dispari. Ragion per cui ti stampo il successivo pari: ' + numeroInserito);
+    console.log (numeroInserito);
 }
-
-alert('La somma dei numeri che mi hai dato è di: ' + somma);
-
