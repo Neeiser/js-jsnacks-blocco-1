@@ -2,21 +2,21 @@
 
 /* while cycle */
 
-const whileArrNumeri = [];
-let whileSum = 0;
-let whileMedia = 0;
+const arrNumeri = [];
+let somma = 0;
+let media = 0;
 
-let index= 0;
+let i= 0;
 
-while (index < 10) {
-    whileArrNumeri.push(index + 1);
-    whileSum += whileArrNumeri[index];
-    index++;
-    console.log(index);
+while (i < 10) {
+    arrNumeri.push(i + 1);
+    somma += arrNumeri[i];
+    i++;
+    console.log(i);
 
 }
 
-whileMedia = whileSum / 10;
+media = somma / 10;
 
-console.log('la somma totale è di: ' + whileSum);
-console.log('la media totale è di: ' + whileMedia);
+console.log('la somma totale è di: ' + somma);
+console.log('la media totale è di: ' + media);
