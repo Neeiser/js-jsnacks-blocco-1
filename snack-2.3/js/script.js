@@ -13,14 +13,17 @@ const nomiArr = ['Agamennone', 'Achille', 'Ettore', 'Menelao', 'Rodrigo', 'Putin
 const cognomiArr = ['Ottone', 'Ferro', 'Tungsteno', 'Tecnezio', 'Borgia', 'Salmone',];
 const fakeGuest = [];
 
-let nomiArrRandom = Math.floor(Math.random() * nomiArr.length);
-let cognomiArrRandom = Math.floor(Math.random() * cognomiArr.length);
-
-let indiceLista = 0;
+let nomiArrRandom
+let cognomiArrRandom
 
 
-while (indiceLista < 3) {
-    fakeGuest.push(nomiArrRandom + cognomiArrRandom);
-    indiceLista++;
-    console.log(fakeGuest);
+while (fakeGuest.length < 3) {
+    nomiArrRandom = nomiArr[Math.floor(Math.random()*nomiArr.length)];
+    cognomiArrRandom = cognomiArr[Math.floor(Math.random()*cognomiArr.length)];
+
+    if (!fakeGuest.includes(nomiArrRandom + ' ' + cognomiArrRandom)){
+        fakeGuest.push(nomiArrRandom + ' ' + cognomiArrRandom);
+    }
 }
+
+alert(fakeGuest)
