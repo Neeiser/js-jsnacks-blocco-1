@@ -16,10 +16,13 @@ const fakeGuest = [];
 let nomiArrRandom
 let cognomiArrRandom
 
+let indexNomiRandom = Math.floor(Math.random()*nomiArr.length);
+let indexCognomiRandom = Math.floor(Math.random()*cognomiArr.length);
+
 
 while (fakeGuest.length < 3) {
-    nomiArrRandom = nomiArr[Math.floor(Math.random()*nomiArr.length)];
-    cognomiArrRandom = cognomiArr[Math.floor(Math.random()*cognomiArr.length)];
+    nomiArrRandom = nomiArr[indexNomiRandom];
+    cognomiArrRandom = cognomiArr[indexCognomiRandom];
 
     if (!fakeGuest.includes(nomiArrRandom + ' ' + cognomiArrRandom)){
         fakeGuest.push(nomiArrRandom + ' ' + cognomiArrRandom);
